@@ -19,6 +19,7 @@ eagle.epf
 *.job
 
 # CAM files
+CAMOutputs/
 *.$$$
 *.cmp
 *.ly2
