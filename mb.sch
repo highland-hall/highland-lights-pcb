@@ -702,7 +702,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="RL622-6R8K-RC" prefix="L">
+<deviceset name="RL622-6R8K-RC" prefix="L" uservalue="yes">
 <gates>
 <gate name="A" symbol="IND" x="0" y="0"/>
 </gates>
@@ -1638,8 +1638,8 @@ Source: &lt;a href="https://www.arrow.com/en/products/tn0702n3-g/microchip-techn
 <devices>
 <device name="" package="LND150N3-G">
 <connects>
-<connect gate="G$1" pin="D" pad="2"/>
-<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="2"/>
 <connect gate="G$1" pin="S" pad="1"/>
 </connects>
 <technologies>
