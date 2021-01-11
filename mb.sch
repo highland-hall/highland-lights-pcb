@@ -2025,10 +2025,10 @@ Created by Upverter.com</description>
 <part name="Q4" library="SamacSys_Parts" deviceset="TN0702N3-G" device=""/>
 <part name="R7" library="ref_lib" deviceset="YAGEO-CFR-25" device="" value="10k"/>
 <part name="R8" library="ref_lib" deviceset="YAGEO-CFR-25" device="" value="10k"/>
-<part name="J2" library="Molex - 70543-0003" deviceset="MOLEX_70543-0003" device="MOLEX_70543-0003_0_0"/>
-<part name="J3" library="Molex - 70543-0003" deviceset="MOLEX_70543-0003" device="MOLEX_70543-0003_0_0"/>
-<part name="J4" library="Molex - 70543-0003" deviceset="MOLEX_70543-0003" device="MOLEX_70543-0003_0_0"/>
-<part name="J5" library="Molex - 70543-0003" deviceset="MOLEX_70543-0003" device="MOLEX_70543-0003_0_0"/>
+<part name="LED1" library="Molex - 70543-0003" deviceset="MOLEX_70543-0003" device="MOLEX_70543-0003_0_0"/>
+<part name="LED2" library="Molex - 70543-0003" deviceset="MOLEX_70543-0003" device="MOLEX_70543-0003_0_0"/>
+<part name="LED3" library="Molex - 70543-0003" deviceset="MOLEX_70543-0003" device="MOLEX_70543-0003_0_0"/>
+<part name="LED4" library="Molex - 70543-0003" deviceset="MOLEX_70543-0003" device="MOLEX_70543-0003_0_0"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="/90" package3d_urn="urn:adsk.eagle:package:22459/2"/>
 <part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="/90" package3d_urn="urn:adsk.eagle:package:22459/2"/>
 <part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="/90" package3d_urn="urn:adsk.eagle:package:22459/2"/>
@@ -2540,16 +2540,16 @@ Created by Upverter.com</description>
 <plain>
 </plain>
 <instances>
-<instance part="J2" gate="G$0" x="10.16" y="147.32" smashed="yes">
+<instance part="LED1" gate="G$0" x="10.16" y="147.32" smashed="yes">
 <attribute name="NAME" x="12.7" y="144.78" size="2.54" layer="95" align="top-left"/>
 </instance>
-<instance part="J3" gate="G$0" x="10.16" y="109.22" smashed="yes">
+<instance part="LED2" gate="G$0" x="10.16" y="109.22" smashed="yes">
 <attribute name="NAME" x="12.7" y="106.68" size="2.54" layer="95" align="top-left"/>
 </instance>
-<instance part="J4" gate="G$0" x="10.16" y="71.12" smashed="yes">
+<instance part="LED3" gate="G$0" x="10.16" y="71.12" smashed="yes">
 <attribute name="NAME" x="12.7" y="68.58" size="2.54" layer="95" align="top-left"/>
 </instance>
-<instance part="J5" gate="G$0" x="10.16" y="33.02" smashed="yes">
+<instance part="LED4" gate="G$0" x="10.16" y="33.02" smashed="yes">
 <attribute name="NAME" x="12.7" y="30.48" size="2.54" layer="95" align="top-left"/>
 </instance>
 <instance part="JP1" gate="A" x="83.82" y="127" smashed="yes" rot="R180">
@@ -2578,44 +2578,24 @@ Created by Upverter.com</description>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="J2" gate="G$0" pin="1"/>
+<pinref part="LED1" gate="G$0" pin="1"/>
 <wire x1="22.86" y1="137.16" x2="55.88" y2="137.16" width="0.1524" layer="91"/>
 <label x="50.8" y="137.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$0" pin="3"/>
-<wire x1="22.86" y1="127" x2="55.88" y2="127" width="0.1524" layer="91"/>
-<label x="50.8" y="127" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$0" pin="1"/>
+<pinref part="LED2" gate="G$0" pin="1"/>
 <wire x1="22.86" y1="99.06" x2="55.88" y2="99.06" width="0.1524" layer="91"/>
 <label x="50.8" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$0" pin="3"/>
-<wire x1="22.86" y1="88.9" x2="55.88" y2="88.9" width="0.1524" layer="91"/>
-<label x="50.8" y="88.9" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J4" gate="G$0" pin="1"/>
+<pinref part="LED3" gate="G$0" pin="1"/>
 <wire x1="22.86" y1="60.96" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
 <label x="50.8" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$0" pin="3"/>
-<wire x1="22.86" y1="50.8" x2="55.88" y2="50.8" width="0.1524" layer="91"/>
-<label x="50.8" y="50.8" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J5" gate="G$0" pin="1"/>
+<pinref part="LED4" gate="G$0" pin="1"/>
 <wire x1="22.86" y1="22.86" x2="55.88" y2="22.86" width="0.1524" layer="91"/>
 <label x="50.8" y="22.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J5" gate="G$0" pin="3"/>
-<wire x1="22.86" y1="12.7" x2="55.88" y2="12.7" width="0.1524" layer="91"/>
-<label x="50.8" y="12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="1"/>
@@ -2637,55 +2617,61 @@ Created by Upverter.com</description>
 <wire x1="86.36" y1="12.7" x2="129.54" y2="12.7" width="0.1524" layer="91"/>
 <label x="124.46" y="12.7" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LED2" gate="G$0" pin="2"/>
+<wire x1="22.86" y1="93.98" x2="55.88" y2="93.98" width="0.1524" layer="91"/>
+<label x="50.8" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED1" gate="G$0" pin="2"/>
+<wire x1="22.86" y1="132.08" x2="55.88" y2="132.08" width="0.1524" layer="91"/>
+<label x="50.8" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED3" gate="G$0" pin="2"/>
+<wire x1="22.86" y1="55.88" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
+<label x="50.8" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED4" gate="G$0" pin="2"/>
+<wire x1="22.86" y1="17.78" x2="55.88" y2="17.78" width="0.1524" layer="91"/>
+<label x="50.8" y="17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="+12V" class="1">
 <segment>
-<pinref part="J2" gate="G$0" pin="4"/>
+<pinref part="LED1" gate="G$0" pin="4"/>
 <wire x1="22.86" y1="121.92" x2="55.88" y2="121.92" width="0.1524" layer="91"/>
 <label x="50.8" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J3" gate="G$0" pin="4"/>
+<pinref part="LED2" gate="G$0" pin="4"/>
 <wire x1="22.86" y1="83.82" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
 <label x="50.8" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$0" pin="4"/>
+<pinref part="LED3" gate="G$0" pin="4"/>
 <wire x1="22.86" y1="45.72" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
 <label x="50.8" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J5" gate="G$0" pin="4"/>
+<pinref part="LED4" gate="G$0" pin="4"/>
 <wire x1="22.86" y1="7.62" x2="55.88" y2="7.62" width="0.1524" layer="91"/>
 <label x="50.8" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED1" class="0">
 <segment>
-<pinref part="J2" gate="G$0" pin="2"/>
-<wire x1="22.86" y1="132.08" x2="55.88" y2="132.08" width="0.1524" layer="91"/>
-<label x="50.8" y="132.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LED2" class="0">
-<segment>
-<pinref part="J3" gate="G$0" pin="2"/>
-<wire x1="22.86" y1="93.98" x2="55.88" y2="93.98" width="0.1524" layer="91"/>
-<label x="50.8" y="93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LED3" class="0">
-<segment>
-<pinref part="J4" gate="G$0" pin="2"/>
-<wire x1="22.86" y1="55.88" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
-<label x="50.8" y="55.88" size="1.778" layer="95"/>
+<pinref part="LED1" gate="G$0" pin="3"/>
+<wire x1="22.86" y1="127" x2="55.88" y2="127" width="0.1524" layer="91"/>
+<label x="50.8" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED4" class="0">
 <segment>
-<pinref part="J5" gate="G$0" pin="2"/>
-<wire x1="22.86" y1="17.78" x2="55.88" y2="17.78" width="0.1524" layer="91"/>
-<label x="50.8" y="17.78" size="1.778" layer="95"/>
+<pinref part="LED4" gate="G$0" pin="3"/>
+<wire x1="22.86" y1="12.7" x2="55.88" y2="12.7" width="0.1524" layer="91"/>
+<label x="50.8" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3.3V" class="0">
@@ -2750,6 +2736,20 @@ Created by Upverter.com</description>
 <pinref part="JP5" gate="G$1" pin="1"/>
 <wire x1="144.78" y1="71.12" x2="167.64" y2="71.12" width="0.1524" layer="91"/>
 <label x="162.56" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED2" class="0">
+<segment>
+<pinref part="LED2" gate="G$0" pin="3"/>
+<wire x1="22.86" y1="88.9" x2="55.88" y2="88.9" width="0.1524" layer="91"/>
+<label x="50.8" y="88.9" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LED3" class="0">
+<segment>
+<pinref part="LED3" gate="G$0" pin="3"/>
+<wire x1="22.86" y1="50.8" x2="55.88" y2="50.8" width="0.1524" layer="91"/>
+<label x="50.8" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
